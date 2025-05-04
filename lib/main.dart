@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/app.dart';
-import 'package:flutter_application_2/screen/home.dart';
+// import 'package:flutter_application_2/app.dart';
+// import 'package:flutter_application_2/screen/home.dart';
+import 'package:flutter_application_2/screen/test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
           bodyMedium: TextStyle(fontSize: 14.0, fontFamily: 'Tagesschrift'),
         ),
       ),
-      home: App(),
+      home: Test(),
     );
   }
 }

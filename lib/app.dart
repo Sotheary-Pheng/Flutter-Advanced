@@ -10,7 +10,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('GeeksforGeeks'),
+          title: Text('GeeksForGeeks'),
           centerTitle: true,
           backgroundColor: Colors.amber,
         ),
@@ -19,9 +19,9 @@ class App extends StatelessWidget {
             width: 200.0,
             height: 150.0,
             child: AutoSizeText(
-              'Hello Geeks!. we wil break this line 3 lines !!!!!',
-              style: TextStyle(fontSize: 30.0),
-              maxLines: 3,
+              'សារៈសំខាន់នៃគណនេ្យ គឺផ្តល់នូវព័ត៌មានអំពីអ្វីដែលជាកម្មសិទ្ធ (គឺទ្រព្យសកម្ម) របស់អង្គភាពអាជីវកម្មមាន អ្វីដែលអង្គភាពអាជីវកម្មជំពាក់គេ (បំណុល) និងថាតើអង្គភាពអាជីវកម្មចាត់ចែងគ្រប់គ្រងនូវអ្វីដែលខ្លួនមាន និងជំពាក់គេយ៉ាងដូចម្តេច?',
+              style: Theme.of(context).textTheme.bodyMedium,
+              maxLines: 6,
             ),
           ),
         ),
