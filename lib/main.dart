@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_application_2/screen/lazy_loader.dart';
-import 'package:flutter_application_2/screen/rotate_transition.dart';
-import 'package:flutter_application_2/screen/routes.dart';
-import 'package:page_transition/page_transition.dart';
+import 'package:flutter_application_2/screen/name_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: appName,
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: Routes(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const NameRoutes(),
+        '/second': (context) => const SecondRoute(),
+      },
     );
   }
 }
